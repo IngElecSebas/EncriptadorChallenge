@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <main class="presentacion">
+        <img class="header_logo_img" src="assets/Logo.svg" alt="imagen_logo">
+        <section class="ingreso_texto">
+            <div class="div_textarea">
+                <textarea name="texto_ingresado" id="texto_ingresado" cols="30" rows="10">Ingrese el texto aquí</textarea>
+            </div>
+            <div class="div_botones">
+                <p class="ingreso_texto_advertencia"><i class='bx bxs-error-circle'></i>Solo letras minúsulas y sin acentos</p>
+                <div class="div_botones_encriptar">
+                    <button onclick="funcBoton('encriptar')" class="ingreso_texto_boton_encriptar">Encriptar</a>
+                    <button onclick="funcBoton('desencriptar')" class="ingreso_texto_boton_desencriptar">Desencriptar</a>
+                    <button onclick="funcReinicio()" class="ingreso_texto_boton_reinicio">Reinicio</button>    
+                </div>
+            </div>   
+        </section>
+
+        <section class="resultado_texto">
+            <p class="texto_procesado"></p>
+            <img class="resultado_texto_img" src="assets/Muñeco.svg" alt="muñeco_resultado">
+            <div class="resultado_texto_cuerpo">
+                <p class="resultado_texto_titulo">Ningún mensaje fue encontrado</b>
+                <p class="resultado_texto_parrafo">Ingresa el texto que desees encriptar o desencriptar</p>   
+            </div>
+            <div class="resultado_boton">
+                <button onclick="copiarTexto()" class="ingreso_texto_boton_copiar">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por Sebastian Torres</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
